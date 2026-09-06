@@ -32,8 +32,11 @@
 
       devShells.${system}.default = pkgs.mkShellNoCC {
         packages = [
+          pkgs.bash
           pkgs.curl
+          pkgs.git
           pkgs.jq
+          pkgs.just
           pkgs.nix
         ];
       };
